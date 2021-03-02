@@ -33,7 +33,7 @@ while True:
     if like != previous_like or retweet != previous_retweet:
         previous_like = like
         previous_retweet = retweet
-        bio = "Likes: " + like + ", Retweet: " + retweet
+        bio = "Likes: " + like + ", Retweets: " + retweet
         api.update_profile(description=bio)
     else:
         pass
