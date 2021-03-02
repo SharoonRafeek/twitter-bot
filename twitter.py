@@ -11,7 +11,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_key_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
-with open("tweet_id", 'r') as file:
+with open("tweet_id.txt", 'r') as file:
     tweet_id = file.read()
 
 def likes():
